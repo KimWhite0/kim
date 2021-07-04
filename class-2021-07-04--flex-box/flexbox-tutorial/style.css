@@ -1,0 +1,27 @@
+.flex-container {
+    border: 1px solid black;
+    padding: 10px;
+    height: 600px;
+
+
+    /* you must use this */
+    display: flex; 
+    /* you use when you want to use column */
+    flex-direction: row; 
+    justify-content: flex-start; /* h if row - v if column */
+    align-items: stretch; /* v if row - h if column */
+    
+    /* flex-wrap: wrap;
+    align-content: stretch; */
+}
+
+.flex-item {
+    border: 1px solid purple;
+    margin: 10px;
+
+    /* flex-basis + flex-grow + flex-shrink */
+    /* YOU DON'T USE WIDTH OR HEIGHT INSIDE FLEX ITEMS */
+    flex-basis: 200px; /* if row it means width - if columb it means height */
+    flex-grow: 0; /* default is 0 */
+    flex-shrink: 1; /* default is 1 */
+}
